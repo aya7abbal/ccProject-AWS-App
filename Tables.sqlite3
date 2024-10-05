@@ -1,0 +1,33 @@
+Tables... sqlite3
+
+ubuntu@ip-172-31-34-37:~/flaskapp$ sqlite3 mydatabase.db
+SQLite version 3.45.1 2024-01-30 16:01:20
+Enter ".help" for usage hints.
+sqlite> .tables
+user_profiles
+sqlite> .schema user_profiles
+CREATE TABLE user_profiles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL,
+    firstname TEXT NOT NULL,
+    lastname TEXT NOT NULL,
+    email TEXT NOT NULL
+);
+sqlite> 
+
+sqlite> SELECT * FROM user_profiles;
+1|seen|seen|seen|seen|yasseenone@yahoo.com
+2|seen|seen|seen|seen|yasseenone@yahoo.com
+3|seen|seen|seen|seen|yasseenone@yahoo.com
+4|aya|123|aya|elhabbal|aya7abbal@gmail.com
+5|aya|123|aya|elhabbal|aya7abbal@gmail.com
+6|aya|aya|aya|aya|aya7abbal@gmail.com
+7|medhat|123|medhat|medhat|aya7abbal@gmail.com
+8|medhat|123|123|123|aya7abbal@gmail.com
+9|aya7abbal|123|aya|elhabbal|aya7abbal@gmail.com
+10|aya7abbal|123|aya|elhabbal|aya7abbal@gmail.com
+11|randa|123|randa|randa|aya7abbal@gmail.com
+12|seenseen|123|Yasseen|Elhabbal|yasseenone@yahoo.com
+13|Aya|123|Aya|Aya|aya7abbal@gmail.com
+sqlite> 
